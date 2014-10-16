@@ -1,0 +1,32 @@
+[
+  {
+    "target": "#",
+    "text": "Home",
+    "id": "null",
+    "class": "navlink"
+  },
+  {
+    "target": "#",
+    "text": "Buy",
+    "id": "null",
+    "class": "navlink"
+  },
+  {
+    "target": "#",
+    "text": "Why?",
+    "id": "null",
+    "class": "navlink"
+  },
+  {
+    "target": "#",
+    "text": "Our Team",
+    "id": "null",
+    "class": "navlink"
+  },
+  {
+    "target":"#",
+    "text": "Partners",
+    "id": "null",
+    "class": "navlink"
+  }
+]
