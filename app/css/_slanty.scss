@@ -1,0 +1,34 @@
+.slanty {
+    background: #fff;
+    padding: 10em 4em;
+    width: 120%;
+    box-sizing: border-box;
+    margin-top:11em;
+    padding-right:calc(20% + 4em);
+}
+
+.skew-neg {
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+}
+
+.skew-pos {
+    -webkit-transform: skewY(2deg);
+    -moz-transform: skewY(2deg);
+    -ms-transform: skewY(2deg);
+    -o-transform: skewY(2deg);
+    transform: skewY(2deg);
+}
+
+.perspective-pos{
+   -webkit-perspective: 500px;
+    perspective: 500px;
+}
+
+.perspective-neg{
+   -webkit-perspective: -500px;
+    perspective: -500px;
+}

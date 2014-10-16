@@ -1,0 +1,22 @@
+{
+  "name": "Slanted-Hosting",
+  "version": "0.0.1",
+  "authors": [
+    "Matt <contact.mattdylan@gmail.com>"
+  ],
+  "description": "A neutral hosting site template",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "react": "https://github.com/reactjs/react-bower.git",
+    "jquery": "~2.1.1",
+    "ionicons": "~1.5.2",
+  }
+}

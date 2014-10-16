@@ -1,0 +1,21 @@
+$primary-color: #EEEFF7;
+$secondary-color: #92CDCF;
+$neutral-light: #445878;
+$neutral-medium: #31353D;
+$neutral-dark: #1C1D21;
+$polygonal: url('../../img/backgrounds/polygons.png');
+
+@import 'slanty';
+
+html{
+	max-width:100%;
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+}
+body{
+	background: $polygonal;
+	overflow-x: hidden;
+	width:100%;
+	height:100%;
+}
