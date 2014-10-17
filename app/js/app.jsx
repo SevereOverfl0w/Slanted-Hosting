@@ -1,8 +1,9 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-var Header = require('./home/header.jsx');
-var SkewedFeatures = require('./home/features.jsx');
+var React           = require('react'),
+    Header          = require('./global/header.jsx'),
+    SkewedFeatures  = require('./home/features.jsx'),
+    Footer          = require('./global/footer.jsx');
 
 var Page = React.createClass({
   render: function(){
@@ -10,6 +11,7 @@ var Page = React.createClass({
       <div className="fullSizeWrapper">
         <Header />
         <SkewedFeatures />
+        <Footer />
       </div>
     );
   }
