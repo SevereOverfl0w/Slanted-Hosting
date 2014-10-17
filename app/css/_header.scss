@@ -5,22 +5,55 @@
   background-size: cover;
   position:relative;
 
+  .iconFeatures{
+    list-style-type:none;
+    position:absolute;
+    text-align:center;
+    top:40%;
+    z-index:10;
+    width:100%;
+    text-shadow:0px 0px 14px rgba(0,0,0,.7);
+
+    li{
+      font-size:14pt;
+      content-align:center;
+      text-align:center;
+      width:55pt;
+      margin:2em;
+      display: inline-block;
+
+      a{
+        color:#fff;
+      }
+      span{
+        font-size:45pt;
+
+      }
+      .smaller{
+        font-size:10pt;
+        line-height:30%;
+      }
+    }
+  }
   .bgvid{
     width: 100%;
   }
   .slogan{
     position:absolute;
-    bottom:0;
+    top:20%;
     text-align:center;
     width:50%;
     left:25%;
     color:#fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight:300;
+    font-family: 'Pacifico', cursive;
     text-shadow: 0 0 15px rgba(0,0,0,1);
   }
+  .subSlogan{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size:16pt;
+  }
   .navbar{
-    padding-left:4em;
+    padding-left:9em;
   }
 
   li{
@@ -46,13 +79,14 @@
     position:absolute;
   }
 }
+
 .sidebarToggler{
   position:absolute;
   left:0;
   background: $secondary-color;
   border:none;
   font-size:18pt;
-  width:3em;
+  width:6em;
   border-radius:none;
   height:100%;
 }

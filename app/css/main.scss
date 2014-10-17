@@ -1,3 +1,4 @@
+@import 'theme';
 $primary-color: #3498DB;
 $secondary-color: #2980B9;
 $neutral-light: #ECF0F1;
@@ -6,8 +7,6 @@ $neutral-dark: #2C3E50;
 
 $lowpoly: url('../../img/backgrounds/lowpoly.png');
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import 'theme';
 @import 'slanty';
 @import 'header';
 @import 'features';
@@ -20,7 +19,7 @@ html{
 	font-family: 'Open Sans', sans-serif;
 }
 body{
-	background: $secondary-color;
+	background: $neutral-dark;
 	background-size:cover;
 	overflow-x: hidden;
 	width:100%;
@@ -32,4 +31,5 @@ body{
 	z-index:1;
 	position:relative;
 	border-top:10px solid $secondary-color;
+	border-bottom:5px solid $secondary-color;
 }

@@ -53,10 +53,25 @@ module.exports = function(grunt){
 					spawn: false,
 				},
 			},
-		}
+      react: {
+        files: 'app/js/**/*.jsx',
+        tasks: ['browserify']
+      }
+    },
+    browserify: {
+      options: {
+        transform: [ require('grunt-react').browserify ]
+      },
+      client: {
+        src: ['app/js/**/*.jsx'],
+        dest: 'app/js/app.built.js'
+      }
+    }
 	});
 
 	// tell grunt we are using this plugin
+	grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -65,5 +80,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// tell grunt what to do when we run it
-	grunt.registerTask('default', ['sass', 'concat', 'uglify', 'cssmin', 'watch']);
+	grunt.registerTask('default', ['browserify', 'sass', 'concat', 'uglify', 'cssmin', 'watch']);
 };

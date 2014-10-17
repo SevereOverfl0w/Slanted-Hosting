@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "ion-pie-graph",
+    "text": "99.99% Uptime",
+    "target": "null"
+  },
+  {
+    "icon": "ion-chatbubbles",
+    "text": "LiveChat Support",
+    "target": "null"
+  },
+  {
+    "icon": "ion-chatbubbles",
+    "text": "24/7 Support",
+    "target": "null"
+  },
+  {
+    "icon": "ion-ios7-bolt",
+    "text": "Enterprise Network",
+    "target": "null"
+  },
+  {
+    "icon": "ion-earth",
+    "text": "Locations Worldwide",
+    "target": "null"
+  }
+]
