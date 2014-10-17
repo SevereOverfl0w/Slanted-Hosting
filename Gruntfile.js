@@ -12,7 +12,6 @@ module.exports = function(grunt){
 			},
 			css:{
 				src: [
-					'app/components/ionicons/css/ionicons.min.css',
 					'app/components/bootstrap/dist/css/bootstrap.min.css',
 					'app/css/main.css'
 				],

@@ -1,0 +1,34 @@
+[
+  {
+    "icon": "ion-clock",
+    "text": "99.99% Uptime"
+  },
+  {
+    "icon": "ion-ios7-gear",
+    "text": "Support for all Modpacks"
+  },
+  {
+    "icon": "ion-document-text",
+    "text": "FTP File Access"
+  },
+  {
+    "icon": "ion-ios7-box",
+    "text": "Unlimited* Disk Space"
+  },
+  {
+    "icon": "ion-stats-bars",
+    "text": "Unlimited* CPU Usage"
+  },
+  {
+    "icon": "ion-connection-bars",
+    "text": "Blazing fast connection"
+  },
+  {
+    "icon": "ion-ios7-world",
+    "text": "Locations Worldwide"
+  },
+  {
+    "icon": "ion-arrow-graph-up-right",
+    "text": "Extremely Powerful"
+  }
+]

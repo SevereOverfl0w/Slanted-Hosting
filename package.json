@@ -19,7 +19,8 @@
   "dependencies": {
     "bower": "^1.3.12",
     "grunt": "^0.4.5",
-    "grunt-contrib-sass": "^0.8.1"
+    "grunt-contrib-sass": "^0.8.1",
+    "webpack": "^1.4.7"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

@@ -1,0 +1,56 @@
+.header{
+  width:100%;
+  height: 30em;
+  background: url('../../img/backgrounds/valley.png');
+  background-size: cover;
+  position:relative;
+
+
+  .slogan{
+    position:absolute;
+    bottom:0;
+    text-align:center;
+    width:50%;
+    left:25%;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:300;
+
+  }
+  .navbar{
+    padding-left:4em;
+  }
+
+  li{
+
+    .hiddenCon{
+      opacity:0;
+      transition: opacity .3s ease-in-out;
+    }
+    .text{
+      transition: margin-left .3s ease-in-out;
+    }
+  }
+  li:hover{
+
+    .hiddenCon{
+      opacity:1;
+    }
+    .text{
+      margin-left:1.5em;
+    }
+  }
+  .hiddenCon{
+    position:absolute;
+  }
+}
+.sidebarToggler{
+  position:absolute;
+  left:0;
+  background: $secondary-color;
+  border:none;
+  font-size:18pt;
+  width:3em;
+  border-radius:none;
+  height:100%;
+}

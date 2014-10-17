@@ -1,20 +1,27 @@
-$primary-color: #EEEFF7;
-$secondary-color: #92CDCF;
-$neutral-light: #445878;
-$neutral-medium: #31353D;
-$neutral-dark: #1C1D21;
-$polygonal: url('../../img/backgrounds/polygons.png');
+$primary-color: #3498DB;
+$secondary-color: #2980B9;
+$neutral-light: #ECF0F1;
+$neutral-medium: #E74C3C;
+$neutral-dark: #2C3E50;
 
+$lowpoly: url('../../img/backgrounds/lowpoly.png');
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import 'theme';
 @import 'slanty';
+@import 'header';
+@import 'features';
 
 html{
 	max-width:100%;
 	width:100%;
 	height:100%;
 	overflow-x:hidden;
+	font-family: 'Open Sans', sans-serif;
 }
 body{
-	background: $polygonal;
+	background: $secondary-color;
+	background-size:cover;
 	overflow-x: hidden;
 	width:100%;
 	height:100%;

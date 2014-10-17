@@ -2,30 +2,28 @@
   {
     "target": "#",
     "text": "Home",
+    "icon": "ion-home",
     "id": "null",
     "class": "navlink"
   },
   {
     "target": "#",
     "text": "Buy",
+    "icon": "ion-ios7-cart",
     "id": "null",
     "class": "navlink"
   },
   {
     "target": "#",
-    "text": "Why?",
-    "id": "null",
-    "class": "navlink"
-  },
-  {
-    "target": "#",
-    "text": "Our Team",
+    "text": "Control Panel",
+    "icon": "ion-ios7-speedometer",
     "id": "null",
     "class": "navlink"
   },
   {
     "target":"#",
-    "text": "Partners",
+    "text": "Support",
+    "icon":"ion-help-buoy",
     "id": "null",
     "class": "navlink"
   }

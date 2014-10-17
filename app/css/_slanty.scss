@@ -3,8 +3,9 @@
     padding: 10em 4em;
     width: 120%;
     box-sizing: border-box;
-    margin-top:11em;
     padding-right:calc(20% + 4em);
+    position:relative;
+    z-index:2;
 }
 
 .skew-neg {
