@@ -26,37 +26,45 @@ React.renderComponent(
 },{"./global/footer.jsx":2,"./global/header.jsx":3,"./home/features.jsx":5,"react":150}],2:[function(require,module,exports){
 /** @jsx React.DOM */
 
-},{}],3:[function(require,module,exports){
+var React = require('react');
+
+/*jshint ignore:start */
+var FooterSitemap = React.createClass({displayName: 'FooterSitemap',
+  render: function(){
+    return(
+      React.DOM.ul(null
+
+      )
+    );
+  }
+});
+/*jshint ignore:end */
+
+/*jshint ignore:start */
+var Footer = React.createClass({displayName: 'Footer',
+  render: function(){
+    return(
+      React.DOM.footer(null, 
+        FooterSitemap(null)
+      )
+    );
+  }
+});
+/*jshint ignore:end */
+
+
+module.exports = Footer;
+
+},{"react":150}],3:[function(require,module,exports){
 /** @jsx React.DOM */
 
 var React = require('react');
 var Navbar = require('./navbar.jsx');
 
+/*jshint ignore:start*/
 var HeaderIconFeatures = React.createClass({displayName: 'HeaderIconFeatures',
-  getInitialState: function(){
-    return{
-      data : []
-    };
-  },
-  loadNavbarJSON: function() {
-    $.ajax({
-      url: "app/js/configs/headerFeatures.json",
-      dataType: 'json',
-      success: function(data) {
-        this.setState({
-          data: data
-        });
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-  componentDidMount: function(){
-    this.loadNavbarJSON();
-  },
   render: function(){
-    var iconFeatures = this.state.data.map(function(iconFeature){
+    var iconFeatures = this.props.icon.map(function(iconFeature){
       return(
         React.DOM.li(null, 
           React.DOM.a({href: iconFeature.target, title: iconFeature.text}, 
@@ -73,11 +81,14 @@ var HeaderIconFeatures = React.createClass({displayName: 'HeaderIconFeatures',
     );
   }
 });
+/*jshint ignore:end*/
 
+/*jshint ignore:start*/
 var Header = React.createClass({displayName: 'Header',
   getInitialState: function(){
     return{
-      data : {}
+      data : {},
+      icon : []
     };
   },
   loadNavbarJSON: function() {
@@ -94,13 +105,28 @@ var Header = React.createClass({displayName: 'Header',
       }.bind(this)
     });
   },
+  loadIconJSON: function() {
+    $.ajax({
+      url: "app/js/configs/headerFeatures.json",
+      dataType: 'json',
+      success: function(data) {
+        this.setState({
+          icon: data
+        });
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
   componentDidMount: function(){
     this.loadNavbarJSON();
+    this.loadIconJSON();
   },
   render: function(){
     return(
       React.DOM.div({className: "header"}, 
-        HeaderIconFeatures(null), 
+        HeaderIconFeatures({icon: this.state.icon}), 
         React.DOM.video({className: "bgvid", loop: true, autoPlay: true}, 
           React.DOM.source({src: "app/vid/back.mp4", type: "video/mp4"})
         ), 
@@ -113,6 +139,7 @@ var Header = React.createClass({displayName: 'Header',
     );
   }
 });
+/*jshint ignore:end*/
 
 module.exports = Header;
 
@@ -219,7 +246,7 @@ var React = require('react');
 
 var FeaturesList = React.createClass({displayName: 'FeaturesList',
   render: function(){
-    var featuresList = this.props.data.map(function(feat){
+    var featuresList = this.props.features.map(function(feat){
       return(
         React.DOM.div({className: "panel panel-default feat"}, 
           React.DOM.div({className: "panel-heading"}, React.DOM.span({className: feat.icon}), " ", feat.text), 
@@ -240,16 +267,16 @@ var FeaturesList = React.createClass({displayName: 'FeaturesList',
 var SkewedFeatures = React.createClass({displayName: 'SkewedFeatures',
   getInitialState: function(){
     return{
-      data : []
+      features : []
     };
   },
-  loadNavbarJSON: function() {
+  loadFeaturesJSON: function() {
     $.ajax({
       url: "app/js/configs/homepageFeatures.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
-          data: data
+          features: data
         });
       }.bind(this),
       error: function(xhr, status, err) {
@@ -258,14 +285,14 @@ var SkewedFeatures = React.createClass({displayName: 'SkewedFeatures',
     });
   },
   componentDidMount: function(){
-    this.loadNavbarJSON();
+    this.loadFeaturesJSON();
   },
   render: function(){
     return(
       React.DOM.div({className: "primary"}, 
         React.DOM.div({className: "skew-pos slanty"}, 
           React.DOM.div({className: "skew-neg"}, 
-            FeaturesList({data: this.state.data})
+            FeaturesList({features: this.state.features})
           )
         )
       )

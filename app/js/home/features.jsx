@@ -4,7 +4,7 @@ var React = require('react');
 
 var FeaturesList = React.createClass({
   render: function(){
-    var featuresList = this.props.data.map(function(feat){
+    var featuresList = this.props.features.map(function(feat){
       return(
         <div className="panel panel-default feat">
           <div className="panel-heading"><span className={feat.icon}></span> {feat.text}</div>
@@ -25,16 +25,16 @@ var FeaturesList = React.createClass({
 var SkewedFeatures = React.createClass({
   getInitialState: function(){
     return{
-      data : []
+      features : []
     };
   },
-  loadNavbarJSON: function() {
+  loadFeaturesJSON: function() {
     $.ajax({
       url: "app/js/configs/homepageFeatures.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
-          data: data
+          features: data
         });
       }.bind(this),
       error: function(xhr, status, err) {
@@ -43,14 +43,14 @@ var SkewedFeatures = React.createClass({
     });
   },
   componentDidMount: function(){
-    this.loadNavbarJSON();
+    this.loadFeaturesJSON();
   },
   render: function(){
     return(
       <div className="primary">
         <div className="skew-pos slanty">
           <div className="skew-neg">
-            <FeaturesList data={this.state.data} />
+            <FeaturesList features={this.state.features} />
           </div>
         </div>
       </div>
