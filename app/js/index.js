@@ -133,6 +133,9 @@ var Header = React.createClass({
   render: function(){
     return(
       <div className="header">
+        <video className="bgvid" loop autoPlay>
+          <source src="app/vid/back.mp4" type="video/mp4" />
+        </video>
         <h1 className="slogan">
           {this.state.data.slogan}
         </h1>
@@ -148,13 +151,18 @@ var FeaturesList = React.createClass({
   render: function(){
     var featuresList = this.props.data.map(function(feat){
       return(
-        <li><span className={feat.icon}></span> {feat.text}</li>
+        <div className="panel panel-default feat">
+          <div className="panel-heading"><span className={feat.icon}></span> {feat.text}</div>
+          <div className="panel-body">
+            {feat.subtext}
+          </div>
+        </div>
       );
     });
     return(
-      <ul className="featuresList">
+      <div className="featuresList">
         {featuresList}
-      </ul>
+      </div>
     );
   }
 });
@@ -184,9 +192,11 @@ var SkewedFeatures = React.createClass({
   },
   render: function(){
     return(
-      <div className="skew-neg slanty">
-        <div className="skew-pos">
-          <FeaturesList data={this.state.data} />
+      <div className="primary">
+        <div className="skew-pos slanty">
+          <div className="skew-neg">
+            <FeaturesList data={this.state.data} />
+          </div>
         </div>
       </div>
     );

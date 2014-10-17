@@ -1,34 +1,42 @@
 [
   {
     "icon": "ion-clock",
-    "text": "99.99% Uptime"
+    "text": "99.99% Uptime",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-ios7-gear",
-    "text": "Support for all Modpacks"
+    "text": "Support for all Modpacks",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-document-text",
-    "text": "FTP File Access"
+    "text": "FTP File Access",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-ios7-box",
-    "text": "Unlimited* Disk Space"
+    "text": "Unlimited* Disk Space",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-stats-bars",
-    "text": "Unlimited* CPU Usage"
+    "text": "Unlimited* CPU Usage",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-connection-bars",
-    "text": "Blazing fast connection"
+    "text": "Blazing fast connection",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-ios7-world",
-    "text": "Locations Worldwide"
+    "text": "Locations Worldwide",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-arrow-graph-up-right",
-    "text": "Extremely Powerful"
+    "text": "Extremely Powerful",
+    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
   }
 ]

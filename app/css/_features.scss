@@ -1,3 +1,16 @@
 .featuresList{
   list-style-type: none;
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+
+  .feat{
+    font-size:10pt;
+    width:32%;
+    margin: .5%;
+    float:left;
+    flex-grow: 0;
+    content-align: center;
+    align-self: center;
+  }
 }

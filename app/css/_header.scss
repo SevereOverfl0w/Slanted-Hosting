@@ -5,7 +5,9 @@
   background-size: cover;
   position:relative;
 
-
+  .bgvid{
+    width: 100%;
+  }
   .slogan{
     position:absolute;
     bottom:0;
@@ -15,7 +17,7 @@
     color:#fff;
     font-family: 'Open Sans', sans-serif;
     font-weight:300;
-
+    text-shadow: 0 0 15px rgba(0,0,0,1);
   }
   .navbar{
     padding-left:4em;

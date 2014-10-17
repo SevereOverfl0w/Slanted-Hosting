@@ -6698,7 +6698,7 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 
 .slanty {
   background: #fff;
-  padding: 10em 4em;
+  padding: 5em 4em;
   width: 120%;
   box-sizing: border-box;
   padding-right: calc(20% + 4em);
@@ -6739,6 +6739,9 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
   background-size: cover;
   position: relative;
 }
+.header .bgvid {
+  width: 100%;
+}
 .header .slogan {
   position: absolute;
   bottom: 0;
@@ -6748,6 +6751,7 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  text-shadow: 0 0 15px black;
 }
 .header .navbar {
   padding-left: 4em;
@@ -6782,6 +6786,18 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 
 .featuresList {
   list-style-type: none;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.featuresList .feat {
+  font-size: 10pt;
+  width: 32%;
+  margin: .5%;
+  float: left;
+  flex-grow: 0;
+  content-align: center;
+  align-self: center;
 }
 
 html {
@@ -6798,6 +6814,14 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+}
+
+.primary {
+  background: #3498DB;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  border-top: 10px solid #2980B9;
 }
 
 /*# sourceMappingURL=main.css.map */
