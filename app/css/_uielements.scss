@@ -1,0 +1,32 @@
+.ghosty{
+    padding:.7em 1.4em;
+    background:transparent;
+    border: .15em solid #fff;
+    color:#fff;
+    font-size:12pt;
+    position:relative;
+    transition: border .2s ease-in-out;
+    overflow:hidden;
+}
+.ghosty:hover{
+    border: .15em solid #00BFFF;
+}
+.ghosty:hover:before{
+    right:10%;
+    left:10%;
+}
+.ghosty:before{
+    content:" ";
+    position:absolute;
+    transform: rotate(40deg);
+    top:-100%;
+    right:50%;
+    bottom:-100%;
+    left:50%;
+    background:#00BFFF;
+    z-index:-1;
+    transition: left .5s ease-in-out, right .5s ease-in-out;
+    -o-transition: left .5s ease-in-out, right .5s ease-in-out;
+    -moz-transition: left .5s ease-in-out, right .5s ease-in-out;
+    -webkit-transition: left .5s ease-in-out, right .5s ease-in-out;
+}

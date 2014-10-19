@@ -29,7 +29,7 @@ var NavbarBrand = React.createClass({
   },
   loadNavbarJSON: function() {
     $.ajax({
-      url: "app/js/configs/main.json",
+      url: "configs/main.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
@@ -59,7 +59,7 @@ var Navbar = React.createClass({
   },
   loadNavbarJSON: function() {
     $.ajax({
-      url: "app/js/configs/navbar.json",
+      url: "configs/navbar.json",
       dataType: 'json',
       success: function(data) {
         this.setState({

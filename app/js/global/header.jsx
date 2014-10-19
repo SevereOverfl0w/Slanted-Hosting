@@ -3,16 +3,32 @@
 var React = require('react');
 var Navbar = require('./navbar.jsx');
 
+$.fn.gotoAnchor = function(anchor) {
+    location.href = '#' + this.selector;
+};
+
+/*jshint ignore:start*/
+var ContinueBtn = React.createClass({
+  render: function(){
+    return(
+      <div className="continueBtnWrapper">
+        <button onClick={this.props.handleClick} className="ghosty">
+          Get Hosted!
+        </button>
+      </div>
+    );
+  }
+});
+/*jshint ignore:end*/
+
 /*jshint ignore:start*/
 var HeaderIconFeatures = React.createClass({
   render: function(){
     var iconFeatures = this.props.icon.map(function(iconFeature){
       return(
         <li>
-          <a href={iconFeature.target} title={iconFeature.text}>
             <span className={iconFeature.icon}></span><br />
             <span className="smaller">{iconFeature.text}</span>
-          </a>
         </li>
       );
     });
@@ -35,7 +51,7 @@ var Header = React.createClass({
   },
   loadNavbarJSON: function() {
     $.ajax({
-      url: "app/js/configs/main.json",
+      url: "configs/main.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
@@ -49,7 +65,7 @@ var Header = React.createClass({
   },
   loadIconJSON: function() {
     $.ajax({
-      url: "app/js/configs/headerFeatures.json",
+      url: "configs/headerFeatures.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
@@ -65,12 +81,16 @@ var Header = React.createClass({
     this.loadNavbarJSON();
     this.loadIconJSON();
   },
+  handleClick: function(){
+    $('gethosted').gotoAnchor();
+  },
   render: function(){
     return(
       <div className="header">
         <HeaderIconFeatures icon={this.state.icon}/>
+        <ContinueBtn handleClick={this.handleClick} />
         <video className="bgvid" loop autoPlay>
-          <source src="app/vid/back.mp4" type="video/mp4" />
+
         </video>
         <h1 className="slogan">
           {this.state.data.slogan}<br />

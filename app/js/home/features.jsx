@@ -30,7 +30,7 @@ var SkewedFeatures = React.createClass({
   },
   loadFeaturesJSON: function() {
     $.ajax({
-      url: "app/js/configs/homepageFeatures.json",
+      url: "configs/homepageFeatures.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
@@ -47,10 +47,12 @@ var SkewedFeatures = React.createClass({
   },
   render: function(){
     return(
-      <div className="primary">
-        <div className="skew-pos slanty">
-          <div className="skew-neg">
-            <FeaturesList features={this.state.features} />
+      <div>
+        <div className="primary">
+          <div className="skew-pos slanty">
+            <div className="skew-neg">
+              <FeaturesList features={this.state.features} />
+            </div>
           </div>
         </div>
       </div>
