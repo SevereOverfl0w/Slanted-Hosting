@@ -21,36 +21,6 @@ var NavbarLinks = React.createClass({
   }
 });
 
-var NavbarBrand = React.createClass({
-  getInitialState: function(){
-    return{
-      data : {}
-    };
-  },
-  loadNavbarJSON: function() {
-    $.ajax({
-      url: "configs/main.json",
-      dataType: 'json',
-      success: function(data) {
-        this.setState({
-          data: data
-        });
-      }.bind(this),
-      error: function(xhr, status, err) {
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-  componentDidMount: function(){
-    this.loadNavbarJSON();
-  },
-  render: function(){
-    return(
-      <a className="navbar-brand" href="#">{this.state.data}</a>
-    );
-  }
-});
-
 var Navbar = React.createClass({
   getInitialState: function(){
     return{
