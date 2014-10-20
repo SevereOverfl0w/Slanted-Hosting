@@ -36,3 +36,6 @@ body{
 	border-top:10px solid $secondary-color;
 	border-bottom:5px solid $secondary-color;
 }
+*:focus {
+    outline: none;
+}

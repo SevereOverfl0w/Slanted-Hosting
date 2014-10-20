@@ -7,6 +7,14 @@
     position:relative;
     transition: border .2s ease-in-out;
     overflow:hidden;
+    z-index:1000;
+}
+.ghosty_alt{
+    color:#000;
+    border: .15em solid #000;
+}
+.ghosty_alt:hover{
+    color:#fff;
 }
 .ghosty:hover{
     border: .15em solid #00BFFF;

@@ -440,6 +440,35 @@ module.exports = SkewedFeatures;
 
 var React = require('react');
 
+var Product = React.createClass({displayName: 'Product',
+  render: function(){
+    return(
+      React.DOM.div({className: "col-xs-12 col-sm-6 col-md-4 col-lg-3"}, 
+  			React.DOM.div({className: "offer offer-success"}, 
+  				React.DOM.div({className: "shape"}, 
+  					React.DOM.div({className: "shape-text"}, 
+  						"$21.99"
+  					)
+  				), 
+  				React.DOM.div({className: "offer-content"}, 
+  					React.DOM.h3({className: "lead"}, 
+  						"A success offer"
+  					), 
+  					React.DOM.p(null, 
+  						"And a little description.", 
+  						React.DOM.br(null), " and so one"
+
+  					), 
+            React.DOM.button({className: "ghosty ghosty_alt"}, 
+              "Buy Now"
+            )
+  				)
+  			)
+  		)
+    );
+  }
+});
+
 /*jshint ignore:start*/
 var Products = React.createClass({displayName: 'Products',
   render: function(){
@@ -448,7 +477,8 @@ var Products = React.createClass({displayName: 'Products',
       React.DOM.a({id: "gethosted"}), 
       React.DOM.div({className: "skew-neg"}, 
         React.DOM.div({className: "container"}, 
-          React.DOM.h1(null, "Get Hosted")
+          React.DOM.h1(null, "Get Hosted"), 
+          Product(null)
         )
       )
     )
