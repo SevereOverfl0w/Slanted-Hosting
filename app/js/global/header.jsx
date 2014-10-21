@@ -3,6 +3,7 @@
 var React = require('react');
 var Navbar = require('./navbar.jsx');
 
+
 $.fn.gotoAnchor = function(anchor) {
     location.href = '#' + this.selector;
 };
