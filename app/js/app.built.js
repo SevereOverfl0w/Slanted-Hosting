@@ -413,35 +413,71 @@ var React = require('react');
 
 var Product = React.createClass({displayName: 'Product',
   render: function(){
-    return(
-      React.DOM.div({className: "col-xs-12 col-sm-6 col-md-4 col-lg-3"}, 
-  			React.DOM.div({className: "offer offer-success"}, 
-  				React.DOM.div({className: "shape"}, 
-  					React.DOM.div({className: "shape-text"}, 
-  						"$21.99"
-  					)
-  				), 
-  				React.DOM.div({className: "offer-content"}, 
-  					React.DOM.h3({className: "lead"}, 
-  						"A success offer"
-  					), 
-  					React.DOM.p(null, 
-  						"And a little description.", 
-  						React.DOM.br(null), " and so one"
-
-  					), 
-            React.DOM.button({className: "ghosty ghosty_alt"}, 
-              "Buy Now"
+    var Products = this.props.products.map(function(product){
+      var Links = product.specs.split(',').map(function(link){
+        return(
+            React.DOM.li(null, 
+              link
             )
-  				)
-  			)
-  		)
+          );
+      });
+      return(
+        React.DOM.div({className: "col-xs-12 col-sm-6 col-md-4 col-lg-3"}, 
+          React.DOM.div({className: "offer offer-success"}, 
+            React.DOM.div({className: "shape"}, 
+              React.DOM.div({className: "shape-text"}, 
+                product.price
+              )
+            ), 
+            React.DOM.div({className: "offer-content"}, 
+              React.DOM.h3({className: "lead"}, 
+                product.name
+              ), 
+              React.DOM.p(null, 
+                Links
+              ), 
+              React.DOM.a({href: product.link}, 
+                React.DOM.button({className: "ghosty ghosty_alt"}, 
+                  "Buy Now"
+                )
+              )
+            )
+          )
+        )
+      );
+    });
+    return(
+      React.DOM.div({className: "container"}, 
+        Products
+      )
     );
   }
 });
 
 /*jshint ignore:start*/
 var Products = React.createClass({displayName: 'Products',
+  getInitialState: function(){
+    return{
+      products : []
+    };
+  },
+  loadProductsJSON: function() {
+    $.ajax({
+      url: "configs/products.json",
+      dataType: 'json',
+      success: function(data) {
+        this.setState({
+          products: data
+        });
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  componentDidMount: function(){
+    this.loadProductsJSON();
+  },
   render: function(){
     return(
     React.DOM.div({className: "products skew-pos"}, 
@@ -449,7 +485,7 @@ var Products = React.createClass({displayName: 'Products',
       React.DOM.div({className: "skew-neg"}, 
         React.DOM.div({className: "container"}, 
           React.DOM.h1(null, "Get Hosted"), 
-          Product(null)
+          Product({products: this.state.products})
         )
       )
     )

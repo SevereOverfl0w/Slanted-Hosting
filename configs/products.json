@@ -1,0 +1,44 @@
+[
+ {
+   "name": "Starter",
+   "specs": "256MB RAM, 5 Recommended Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=2",
+   "price": "$2.00"
+ },
+ {
+   "name": "Basic",
+   "specs": "512MB RAM, 10 Recommended Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=3",
+   "price": "$4.00"
+ },
+ {
+   "name": "Basic Plus",
+   "specs": "1GB RAM, 20 Recommended Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=4",
+   "price": "$8.00"
+ },
+ {
+   "name": "Plus",
+   "specs": "2GB RAM, 30 Recommended Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=6",
+   "price": "$16.00"
+ },
+ {
+   "name": "Premium",
+   "specs": "4GB RAM, 50 Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=8",
+   "price": "$32.00"
+ },
+ {
+   "name": "Premium Plus",
+   "specs": "6GB RAM, 80 Recommended Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=9",
+   "price": "$48.00"
+ },
+ {
+   "name": "Ultimate",
+   "specs": "8GB RAM, 100 Recommended Slots, Unlimited Disk Space*",
+   "link": "https://acixs.com/clients/cart.php?a=add&pid=10",
+   "price": "$64.00"
+ }
+]
