@@ -6847,7 +6847,7 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 
 .products {
   min-height: 30em;
-  padding: 2em 0;
+  padding: 8em 0 5em 0;
   width: 100%;
   background: #eee;
   position: relative;
@@ -6859,6 +6859,34 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 }
 .products .panel {
   background: red;
+}
+
+.productSelection {
+  margin: 0 0 0 2em;
+  background: #fff;
+  border-bottom: 5px solid #d9534f;
+}
+.productSelection li {
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+  width: 33%;
+}
+.productSelection li:hover {
+  background: #fcfcfc;
+}
+.productSelection li:hover .icon {
+  color: #3498DB;
+}
+.productSelection .active {
+  background: #fcfcfc;
+}
+.productSelection .active .icon {
+  color: #3498DB;
+}
+
+.icon {
+  font-size: 50pt;
 }
 
 .shape {
@@ -7070,6 +7098,13 @@ body {
 
 *:focus {
   outline: none;
+}
+
+.stylizedSpacer {
+  height: 25em;
+  width: 100%;
+  background: url("../../img/backgrounds/concert.jpg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

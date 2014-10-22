@@ -39,3 +39,9 @@ body{
 *:focus {
     outline: none;
 }
+.stylizedSpacer{
+	height: 25em;
+	width:100%;
+	background:url('../../img/backgrounds/concert.jpg');
+	background-size: cover;
+}

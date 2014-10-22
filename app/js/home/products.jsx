@@ -2,13 +2,14 @@
 
 var React = require('react');
 
+/*jshint ignore:start*/
 var Product = React.createClass({
   render: function(){
     var Products = this.props.products.map(function(product){
-      var Links = product.specs.split(',').map(function(link){
+      var Specs = product.specs.split(',').map(function(specs){
         return(
             <li>
-              {link}
+              {specs}
             </li>
           );
       });
@@ -25,7 +26,9 @@ var Product = React.createClass({
                 {product.name}
               </h3>
               <p>
-                {Links}
+                <ul>
+                  {Specs}
+                </ul>
               </p>
               <a href={product.link}>
                 <button className="ghosty ghosty_alt">
@@ -44,6 +47,45 @@ var Product = React.createClass({
     );
   }
 });
+/*jshint ignore:end*/
+
+/*jshint ignore:start*/
+
+var MinecraftButton = React.createClass({
+  render: function(){
+    return(
+      <li onClick={this.props.onClick}>
+        <span data-serviceType="Minecraft" className="ion-cube icon"></span><br />
+        Minecraft
+      </li>
+    );
+  }
+});
+
+var WebHostingButton = React.createClass({
+  render: function(){
+    return(
+      <li onClick={this.props.onClick}>
+        <span data-serviceType="WebHosting" className="ion-ios7-world icon"></span><br />
+        Web Hosting
+      </li>
+    );
+  }
+});
+
+var VPSHostingButton = React.createClass({
+  render: function(){
+    return(
+      <li onClick={this.props.onClick}>
+        <span data-serviceType="VPSHosting" className="ion-cloud icon"></span><br />
+        VPS Hosting
+      </li>
+    );
+  }
+});
+
+/*jshint ignore:end*/
+
 
 /*jshint ignore:start*/
 var Products = React.createClass({
@@ -52,9 +94,37 @@ var Products = React.createClass({
       products : []
     };
   },
-  loadProductsJSON: function() {
+  loadMinecraftJSON: function() {
     $.ajax({
-      url: "configs/products.json",
+      url: "configs/productsMinecraft.json",
+      dataType: 'json',
+      success: function(data) {
+        this.setState({
+          products: data
+        });
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  loadVPSJSON: function() {
+    $.ajax({
+      url: "configs/productsVPS.json",
+      dataType: 'json',
+      success: function(data) {
+        this.setState({
+          products: data
+        });
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  loadWebJSON: function() {
+    $.ajax({
+      url: "configs/productsWeb.json",
       dataType: 'json',
       success: function(data) {
         this.setState({
@@ -67,7 +137,7 @@ var Products = React.createClass({
     });
   },
   componentDidMount: function(){
-    this.loadProductsJSON();
+    this.loadMinecraftJSON();
   },
   render: function(){
     return(
@@ -75,8 +145,13 @@ var Products = React.createClass({
       <a id="gethosted"></a>
       <div className="skew-neg">
         <div className="container">
-          <h1>Get Hosted</h1>
-          <Product products={this.state.products}/>
+          <h1>Get Hosted</h1><br /><br /><br />
+            <ul className="productSelection">
+              <MinecraftButton onClick={this.loadMinecraftJSON} />
+              <WebHostingButton onClick={this.loadWebJSON} />
+              <VPSHostingButton onClick={this.loadVPSJSON} />
+            </ul>
+            <Product products={this.state.products}/>
         </div>
       </div>
     </div>

@@ -1,3 +1,13 @@
+# Acceptable Use
+---
+Although the site and all it's code is OpenSource, the content pricing and Images are not.
+If you plan to use this site for your own company you *MUST* remove all images and generate your own content
+as well as pricing and product names/ideas.
+
+The intelectual property of this project is copyright Acixs, LLC.
+
+Other than that, you guys are free to do whatever you want. 
+
 # Setting up the site
 ---
 ### Dependancies

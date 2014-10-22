@@ -6,6 +6,7 @@ var React           = require('react'),
     Footer          = require('./global/footer.jsx'),
     Products        = require('./home/products.jsx');
 
+/*jshint ignore:start*/
 var Page = React.createClass({
   render: function(){
     return(
@@ -13,6 +14,9 @@ var Page = React.createClass({
         <Header />
         <SkewedFeatures />
         <Products />
+        <div className="stylizedSpacer">
+
+        </div>
         <Footer />
       </div>
     );
@@ -23,3 +27,4 @@ React.renderComponent(
   <Page />,
   document.getElementById('render')
 );
+/*jshint ignore:end*/
