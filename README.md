@@ -1,5 +1,5 @@
-![Acixs](http://acixs.com/assets/img/acixs_dark.png =250px)
-![32Dev](http://32dev.com/assets/img/32dev.jpg =250px)
+![Acixs](http://acixs.com/assets/img/acixs_dark.png =250x)
+![32Dev](http://32dev.com/assets/img/32dev.jpg =250x)
 
 # Acceptable Use
 ---
