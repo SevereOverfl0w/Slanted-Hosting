@@ -1,3 +1,6 @@
+![Acixs](http://acixs.com/assets/img/acixs_dark.png)
+![32Dev](http://32dev.com/assets/img/32dev.jpg)
+
 # Acceptable Use
 ---
 Although the site and all it's code is OpenSource, the content pricing and Images are not.
@@ -6,7 +9,7 @@ as well as pricing and product names/ideas.
 
 The intelectual property of this project is copyright Acixs, LLC.
 
-Other than that, you guys are free to do whatever you want. 
+Other than that, you guys are free to do whatever you want.
 
 # Setting up the site
 ---
