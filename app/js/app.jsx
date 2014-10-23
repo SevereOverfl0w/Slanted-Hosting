@@ -4,7 +4,8 @@ var React           = require('react'),
     Header          = require('./global/header.jsx'),
     SkewedFeatures  = require('./home/features.jsx'),
     Footer          = require('./global/footer.jsx'),
-    Products        = require('./home/products.jsx');
+    Products        = require('./home/products.jsx'),
+    StaffList       = require('./home/staff.jsx');
 
 /*jshint ignore:start*/
 var Page = React.createClass({
@@ -17,6 +18,7 @@ var Page = React.createClass({
         <div className="stylizedSpacer">
 
         </div>
+        <StaffList />
         <Footer />
       </div>
     );

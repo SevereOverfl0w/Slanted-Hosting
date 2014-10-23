@@ -52,7 +52,7 @@ var Promotions = React.createClass({
     return(
       <div>
         <h4>Promotions</h4>
-        <img src="app/img/promo.png"/>
+        <img src="app/img/promo.svg" width="250"/>
       </div>
     );
   }

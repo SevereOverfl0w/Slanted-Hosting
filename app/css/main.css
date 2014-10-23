@@ -7071,6 +7071,90 @@ footer ul li a {
   text-decoration: none;
 }
 
+.staff {
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 3em 0 3em 0;
+}
+.staff h1 {
+  font-family: 'Pacifico', cursive;
+  color: #333;
+}
+.staff h5 {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+.staff h5 .title {
+  color: #ccc;
+  font-weight: 400;
+}
+
+.avatar {
+  margin: 1em;
+  position: relative;
+  width: 155px;
+  float: left;
+}
+.avatar img.user {
+  height: 155px;
+  width: 155px;
+  background-color: #4db8d6;
+  box-shadow: 0 0 0 5px #4db8d6;
+  border-radius: 50%;
+}
+.avatar img.user:hover {
+  cursor: pointer;
+  -moz-animation: bounceOut .4s linear;
+  -webkit-animation: bounceOut .4s linear;
+}
+
+@-moz-keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 4px #4db8d6;
+    opacity: 1;
+  }
+  25% {
+    box-shadow: 0 0 0 1px #4db8d6;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 7px #4db8d6;
+    opacity: 1;
+  }
+  75% {
+    box-shadow: 0 0 0 4px #4db8d6;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #4db8d6;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounceOut {
+  0% {
+    box-shadow: 0 0 0 4px #4db8d6;
+    opacity: 1;
+  }
+  25% {
+    box-shadow: 0 0 0 1px #4db8d6;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 7px #4db8d6;
+    opacity: 1;
+  }
+  75% {
+    box-shadow: 0 0 0 4px #4db8d6;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #4db8d6;
+    opacity: 1;
+  }
+}
 html {
   max-width: 100%;
   width: 100%;

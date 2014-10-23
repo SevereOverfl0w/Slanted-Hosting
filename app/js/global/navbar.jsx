@@ -5,11 +5,30 @@ var React = require('react');
 var NavbarLinks = React.createClass({
   render: function(){
     var navLinks = this.props.data.map(function(link){
+      var dropdown = function(){
+        if(typeof(link.dropdown) !== 'undefined'){
+          return(
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          );
+        }
+      };
       return(
         <li id={link.id} className={link.class}>
           <a className="navLinks" href={link.target} title={link.text}>
             <span className={link.icon + " hiddenCon"}></span> <span className="text">{link.text}</span>
           </a>
+          {dropdown}
         </li>
       );
     });

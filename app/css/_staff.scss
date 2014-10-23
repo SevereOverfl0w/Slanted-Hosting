@@ -1,0 +1,62 @@
+$bounce-color   :   #4db8d6;
+$image-size     :   155px;
+
+.staff{
+  overflow:auto;
+  width:100%;
+  height:auto;
+  background:#fff;
+  padding: 3em 0 3em 0;
+
+  h1{
+    font-family: 'Pacifico', cursive;
+    color:#333;
+  }
+  h5{
+    text-align:center;
+    color:#333;
+    font-weight:bold;
+
+    .title{
+      color:#ccc;
+      font-weight:400;
+    }
+  }
+}
+.avatar {
+  margin:1em;
+  position:relative;
+  width:$image-size;
+  float:left;
+
+  img.user {
+    height: $image-size;
+    width: $image-size;
+    background-color: $bounce-color ;
+    box-shadow: 0 0 0 5px $bounce-color ;
+    border-radius: 50%;
+
+     &:hover {
+      cursor: pointer;
+      -moz-animation:bounceOut .4s linear;
+      -webkit-animation:bounceOut .4s linear;
+    }
+
+  }
+
+}
+@-moz-keyframes bounceOut {
+        0%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
+        25%{ box-shadow: 0 0 0 1px $bounce-color; opacity:1;}
+        50%{ box-shadow: 0 0 0 7px $bounce-color; opacity:1; }
+        75%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
+        100%{ box-shadow: 0 0 0 5px $bounce-color; opacity:1;}
+}
+
+@-webkit-keyframes bounceOut {
+        0%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
+        25%{ box-shadow: 0 0 0 1px $bounce-color; opacity:1;}
+        50%{ box-shadow: 0 0 0 7px $bounce-color; opacity:1; }
+        75%{ box-shadow: 0 0 0 4px $bounce-color; opacity:1;}
+        100%{ box-shadow: 0 0 0 5px $bounce-color; opacity:1;}
+}

@@ -22,5 +22,9 @@
   {
     "text":"Web Development",
     "target": "http://32dev.com"
+  },
+  {
+    "test":"*Acceptable Use / TOS",
+    "target":"http://acixs.com/old/tos.php"
   }
 ]

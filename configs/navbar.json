@@ -14,9 +14,23 @@
     "class": "navlink"
   },
   {
-    "target": "#",
-    "text": "Control Panel",
-    "icon": "ion-ios7-speedometer",
+    "target": "http://panel.acixs.com/multicraft",
+    "text": "Manage Minecraft",
+    "icon": "ion-speedometer",
+    "id": "null",
+    "class": "navlink"
+  },
+  {
+    "target": "https://bobcat.web.acixs.com:2083/login/",
+    "text": "Manage Web",
+    "icon": "ion-earth",
+    "id": "null",
+    "class": "navlink"
+  },
+  {
+    "target": "http://toucan.vps.acixs.com:5353/login.php",
+    "text": "Manage VPS",
+    "icon": "ion-speedometer",
     "id": "null",
     "class": "navlink"
   },

@@ -1,0 +1,20 @@
+[
+  {
+    "link":"http://32dev.com",
+    "image":"https://avatars0.githubusercontent.com/u/1770198?v=2&s=460",
+    "name": "Matt Wisniewski",
+    "title": "CTO / Software Engineer"
+  },
+  {
+    "link": "null",
+    "image": "https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2014-10-10/2788925654_192.jpg",
+    "name": "Varix",
+    "title": "Support Rep."
+  },
+  {
+    "link": "null",
+    "image": "https://secure.gravatar.com/avatar/5424fc81ed485461f8dcdf35718bdad3.jpg?s=192&d=https%3A%2F%2Fslack.global.ssl.fastly.net%2F8390%2Fimg%2Favatars%2Fava_0023.png",
+    "name": "Daniel Adder",
+    "title": "Systems & Tech Manager"
+  }
+]
