@@ -187,7 +187,7 @@ var ContinueBtn = React.createClass({displayName: 'ContinueBtn',
   render: function(){
     return(
       React.DOM.div({className: "continueBtnWrapper"}, 
-        React.DOM.button({onClick: this.props.handleClick, className: "ghosty"}, 
+        React.DOM.button({onClick: this.props.handleClick, className: "ghosty ghosty_alt"}, 
           "Get Hosted!"
         )
       )
@@ -572,7 +572,14 @@ var Products = React.createClass({displayName: 'Products',
       React.DOM.a({id: "gethosted"}), 
       React.DOM.div({className: "skew-neg"}, 
         React.DOM.div({className: "container"}, 
-          React.DOM.h1(null, "Get Hosted"), React.DOM.br(null), React.DOM.br(null), React.DOM.br(null), 
+          React.DOM.div({className: "productsInfo"}, 
+            React.DOM.h1(null, "Get Hosted"), React.DOM.br(null), 
+            React.DOM.p(null, "Below you will find all the services Acixs offers, each plan comes" + ' ' +
+            "with 24/7 support and offers a 5 day money back garuntee. "), React.DOM.br(null), 
+            React.DOM.p(null, "Prices are ", React.DOM.strong(null, "monthly"), " you may also purchase for longer periods" + ' ' +
+            "of time to gain discounts. If you are coming by means of a recommendation" + ' ' +
+            "from one of our great partners be sure to use their discount code!"), React.DOM.br(null)
+          ), 
             React.DOM.ul({className: "productSelection"}, 
               MinecraftButton({onClick: this.loadMinecraftJSON}), 
               WebHostingButton({onClick: this.loadWebJSON}), 

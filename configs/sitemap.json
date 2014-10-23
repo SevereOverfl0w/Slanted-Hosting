@@ -1,30 +1,26 @@
 [
   {
-    "text":"Dummy Text",
-    "target": "#"
+    "text":"Support",
+    "target": "https://www.acixs.com/clients/submitticket.php?step=2&deptid=3"
   },
   {
-    "text":"Dummy Text",
-    "target": "#"
+    "text":"My Account",
+    "target": "https://acixs.com/clients/clientarea.php"
   },
   {
-    "text":"Dummy Text",
-    "target": "#"
+    "text":"Multicraft Control panel",
+    "target": "http://panel.acixs.com/multicraft"
   },
   {
-    "text":"Dummy Text",
-    "target": "#"
+    "text":"Web Hosting Panel",
+    "target": "https://bobcat.web.acixs.com:2083/login/"
   },
   {
-    "text":"Dummy Text",
-    "target": "#"
+    "text":"VPS Panel",
+    "target": "http://toucan.vps.acixs.com:5353/login.php"
   },
   {
-    "text":"Dummy Text",
-    "target": "#"
-  },
-  {
-    "text":"Dummy Text",
-    "target": "#"
+    "text":"Web Development",
+    "target": "http://32dev.com"
   }
 ]

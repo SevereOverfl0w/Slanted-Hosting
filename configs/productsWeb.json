@@ -1,8 +1,44 @@
 [
- {
-   "name": "WebHosting Json",
-   "specs": "256MB RAM, 5 Recommended Slots, Unlimited Disk Space*",
-   "link": "https://acixs.com/clients/cart.php?a=add&pid=2",
-   "price": "$2.00"
- }
+{
+  "name": "Super Cheap",
+  "specs": "No Support, 1GB Disk Space, 1 FTP Account(s), 0 MySQL Databases, 1 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=55",
+  "price": "$0.40"
+},
+{
+  "name": "Mini Starter",
+  "specs": "Support, 5GB Disk Space, 1 FTP Account(s), 3 MySQL Databases, 1 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=48",
+  "price": "$2.00"
+},
+{
+  "name": "Starter",
+  "specs": "24/7 Support, 10GB Disk Space, 2 FTP Account(s), 3 MySQL Databases, 2 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=50",
+  "price": "$4.00"
+},
+{
+  "name": "Basic",
+  "specs": "24/7 Support, 20GB Disk Space, 3 FTP Account(s), 3 MySQL Databases, 3 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=51",
+  "price": "$8.00"
+},
+{
+  "name": "Basic Plus",
+  "specs": "24/7 Support, 40GB Disk Space, 3 FTP Account(s), 6 MySQL Databases, 3 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=52",
+  "price": "$16.00"
+},
+{
+  "name": "Premium",
+  "specs": "24/7 Support, 80GB Disk Space, 3 FTP Account(s), 6 MySQL Databases, 3 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=53",
+  "price": "$32.00"
+},
+{
+  "name": "Enterprise",
+  "specs": "24/7 Support, 160GB Disk Space, 6 FTP Account(s), 6 MySQL Databases, 6 Email Account(s), 1Click Installs",
+  "link": "https://acixs.com/clients/cart.php?a=add&pid=54",
+  "price": "$64.00"
+}
 ]

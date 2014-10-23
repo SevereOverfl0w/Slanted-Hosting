@@ -1,13 +1,13 @@
 [
   {
-    "target": "#",
+    "target": "http://acixs.com",
     "text": "Home",
     "icon": "ion-home",
     "id": "null",
     "class": "navlink"
   },
   {
-    "target": "#",
+    "target": "#gethosted",
     "text": "Buy",
     "icon": "ion-ios7-cart",
     "id": "null",
@@ -21,10 +21,17 @@
     "class": "navlink"
   },
   {
-    "target":"#",
+    "target":"https://www.acixs.com/clients/submitticket.php?step=2&deptid=3",
     "text": "Support",
     "icon":"ion-help-buoy",
     "id": "null",
     "class": "navlink"
+  },
+  {
+    "target":"https://acixs.com/clients/clientarea.php",
+    "text":"Manage Account",
+    "icon":"ion-person",
+    "id": "null",
+    "class": "navLink"
   }
 ]

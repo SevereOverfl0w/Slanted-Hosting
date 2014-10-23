@@ -6861,6 +6861,10 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
   background: red;
 }
 
+.productsInfo {
+  margin-left: 2em;
+}
+
 .productSelection {
   margin: 0 0 0 2em;
   background: #fff;
@@ -6874,6 +6878,7 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 }
 .productSelection li:hover {
   background: #fcfcfc;
+  cursor: pointer;
 }
 .productSelection li:hover .icon {
   color: #3498DB;

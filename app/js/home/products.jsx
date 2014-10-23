@@ -145,7 +145,14 @@ var Products = React.createClass({
       <a id="gethosted"></a>
       <div className="skew-neg">
         <div className="container">
-          <h1>Get Hosted</h1><br /><br /><br />
+          <div className="productsInfo">
+            <h1>Get Hosted</h1><br />
+            <p>Below you will find all the services Acixs offers, each plan comes
+            with 24/7 support and offers a 5 day money back garuntee. </p><br />
+            <p>Prices are <strong>monthly</strong> you may also purchase for longer periods
+            of time to gain discounts. If you are coming by means of a recommendation
+            from one of our great partners be sure to use their discount code!</p><br />
+          </div>
             <ul className="productSelection">
               <MinecraftButton onClick={this.loadMinecraftJSON} />
               <WebHostingButton onClick={this.loadWebJSON} />
