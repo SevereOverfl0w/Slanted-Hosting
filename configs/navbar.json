@@ -4,48 +4,57 @@
     "text": "Home",
     "icon": "ion-home",
     "id": "null",
-    "class": "navlink"
+    "class": "navlink",
+    "data": "no"
   },
   {
     "target": "#gethosted",
     "text": "Buy",
     "icon": "ion-ios7-cart",
     "id": "null",
-    "class": "navlink"
+    "class": "navlink",
+    "data": "no"
   },
   {
-    "target": "http://panel.acixs.com/multicraft",
-    "text": "Manage Minecraft",
+    "target": "#",
+    "text": "Manage Your Services",
     "icon": "ion-speedometer",
     "id": "null",
-    "class": "navlink"
-  },
-  {
-    "target": "https://bobcat.web.acixs.com:2083/login/",
-    "text": "Manage Web",
-    "icon": "ion-earth",
-    "id": "null",
-    "class": "navlink"
-  },
-  {
-    "target": "http://toucan.vps.acixs.com:5353/login.php",
-    "text": "Manage VPS",
-    "icon": "ion-speedometer",
-    "id": "null",
-    "class": "navlink"
+    "class": "navlink dropdown",
+    "dropdown": "true",
+    "data": "dropdown",
+    "dropdown_content": [
+      {
+        "target": "http://panel.acixs.com/multicraft",
+        "text": "Minecraft Control Panel",
+        "icon": "ion-cube"
+      },
+      {
+        "target": "https://bobcat.web.acixs.com:2083/login/",
+        "text": "Web Control Panel",
+        "icon": "ion-cube"
+      },
+      {
+        "target": "http://toucan.vps.acixs.com:5353/login.php",
+        "text": "VPS Control Panel",
+        "icon": "ion-cube"
+      }
+    ]
   },
   {
     "target":"https://www.acixs.com/clients/submitticket.php?step=2&deptid=3",
     "text": "Support",
     "icon":"ion-help-buoy",
     "id": "null",
-    "class": "navlink"
+    "class": "navlink",
+    "data": "no"
   },
   {
     "target":"https://acixs.com/clients/clientarea.php",
     "text":"Manage Account",
     "icon":"ion-person",
     "id": "null",
-    "class": "navLink"
+    "class": "navLink",
+    "data": "no"
   }
 ]

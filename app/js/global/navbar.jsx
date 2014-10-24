@@ -5,30 +5,30 @@ var React = require('react');
 var NavbarLinks = React.createClass({
   render: function(){
     var navLinks = this.props.data.map(function(link){
-      var dropdown = function(){
-        if(typeof(link.dropdown) !== 'undefined'){
+      if (link.dropdown){
+        var allDropdowns = link.dropdown_content.map(function(link){
           return(
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+              <li><a href={link.target}>{link.text}</a></li>
           );
-        }
-      };
+        });
+        var constructedDropdown = function(){
+          console.log("test");
+          return(
+            <ul class="dropdown-menu" role="menu">
+
+              {navLinks}
+            </ul>
+          );
+        };
+      }
       return(
         <li id={link.id} className={link.class}>
-          <a className="navLinks" href={link.target} title={link.text}>
+          <a className="navLinks dropdown-toggle" href={link.target} title={link.text} data-toggle={link.data}>
             <span className={link.icon + " hiddenCon"}></span> <span className="text">{link.text}</span>
           </a>
-          {dropdown}
+          <ul className="dropdown-menu" role="menu">
+          {allDropdowns}
+          </ul>
         </li>
       );
     });

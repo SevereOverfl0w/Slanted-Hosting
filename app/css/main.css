@@ -7077,6 +7077,9 @@ footer ul li a {
   height: auto;
   background: #fff;
   padding: 3em 0 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .staff h1 {
   font-family: 'Pacifico', cursive;
@@ -7093,10 +7096,10 @@ footer ul li a {
 }
 
 .avatar {
-  margin: 1em;
+  margin: 2em;
   position: relative;
   width: 155px;
-  float: left;
+  flex-grow: 0;
 }
 .avatar img.user {
   height: 155px;

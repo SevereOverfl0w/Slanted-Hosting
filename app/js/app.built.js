@@ -290,30 +290,30 @@ var React = require('react');
 var NavbarLinks = React.createClass({displayName: 'NavbarLinks',
   render: function(){
     var navLinks = this.props.data.map(function(link){
-      var dropdown = function(){
-        if(typeof(link.dropdown) !== 'undefined'){
+      if (link.dropdown){
+        var allDropdowns = link.dropdown_content.map(function(link){
           return(
-            React.DOM.li({class: "dropdown"}, 
-              React.DOM.a({href: "#", class: "dropdown-toggle", 'data-toggle': "dropdown"}, "Dropdown ", React.DOM.span({class: "caret"})), 
-              React.DOM.ul({class: "dropdown-menu", role: "menu"}, 
-                React.DOM.li(null, React.DOM.a({href: "#"}, "Action")), 
-                React.DOM.li(null, React.DOM.a({href: "#"}, "Another action")), 
-                React.DOM.li(null, React.DOM.a({href: "#"}, "Something else here")), 
-                React.DOM.li({class: "divider"}), 
-                React.DOM.li(null, React.DOM.a({href: "#"}, "Separated link")), 
-                React.DOM.li({class: "divider"}), 
-                React.DOM.li(null, React.DOM.a({href: "#"}, "One more separated link"))
-              )
+              React.DOM.li(null, React.DOM.a({href: link.target}, link.text))
+          );
+        });
+        var constructedDropdown = function(){
+          console.log("test");
+          return(
+            React.DOM.ul({class: "dropdown-menu", role: "menu"}, 
+
+              navLinks
             )
           );
-        }
-      };
+        };
+      }
       return(
         React.DOM.li({id: link.id, className: link.class}, 
-          React.DOM.a({className: "navLinks", href: link.target, title: link.text}, 
+          React.DOM.a({className: "navLinks dropdown-toggle", href: link.target, title: link.text, 'data-toggle': link.data}, 
             React.DOM.span({className: link.icon + " hiddenCon"}), " ", React.DOM.span({className: "text"}, link.text)
           ), 
-          dropdown
+          React.DOM.ul({className: "dropdown-menu", role: "menu"}, 
+          allDropdowns
+          )
         )
       );
     });
