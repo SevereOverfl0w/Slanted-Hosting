@@ -370,7 +370,8 @@ module.exports = Navbar;
 },{"react":153}],5:[function(require,module,exports){
 /** @jsx React.DOM */
 
-var React = require('react');
+var React     = require('react'),
+    Partners  = require('./partners.jsx');
 
 var FeaturesList = React.createClass({displayName: 'FeaturesList',
   render: function(){
@@ -432,20 +433,24 @@ var SkewedFeatures = React.createClass({displayName: 'SkewedFeatures',
 
 module.exports = SkewedFeatures;
 
-},{"react":153}],6:[function(require,module,exports){
+},{"./partners.jsx":6,"react":153}],6:[function(require,module,exports){
 /**@jsx React.DOM */
+
+var React = require('react');
 
 var Partners = React.createClass({displayName: 'Partners',
   render: function(){
     return(
-      "Nope"
+      React.DOM.div({className: "partners"}
+
+      )
     );
   }
 });
 
 module.exports = Partners;
 
-},{}],7:[function(require,module,exports){
+},{"react":153}],7:[function(require,module,exports){
 /**@jsx React.DOM */
 
 var React = require('react');

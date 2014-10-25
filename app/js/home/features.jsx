@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 
-var React = require('react');
+var React     = require('react'),
+    Partners  = require('./partners.jsx');
 
 var FeaturesList = React.createClass({
   render: function(){
