@@ -55,9 +55,16 @@ module.exports = function(grunt){
 			},
       react: {
         files: 'app/js/**/*.jsx',
-        tasks: ['browserify']
+        tasks: ['browserify', 'react']
       }
     },
+		react:{
+			convert: {
+				files: {
+					'app/dist/js/app.built.js' : 'app/js/app.built.js'
+				}
+			}
+		},
     browserify: {
       options: {
         transform: [ require('grunt-react').browserify ]
@@ -78,7 +85,8 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-react');
 
 	// tell grunt what to do when we run it
-	grunt.registerTask('default', ['browserify', 'sass', 'concat', 'uglify', 'cssmin', 'watch']);
+	grunt.registerTask('default', ['browserify', 'sass', 'concat', 'uglify', 'cssmin', 'react', 'watch']);
 };

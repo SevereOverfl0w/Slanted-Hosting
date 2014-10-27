@@ -2,41 +2,41 @@
   {
     "icon": "ion-clock",
     "text": "99.99% Uptime",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "You're paying for a monthly service, so none of that time paid should include downtime!"
   },
   {
     "icon": "ion-ios7-gear",
     "text": "Support for all Modpacks",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "Support for Tekkit, FTB, ATLauncher servers such as the MadPack, Monster, DireWolf20, and more !"
   },
   {
     "icon": "ion-document-text",
     "text": "FTP File Access",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "Access to your files should be easy! That’s why all of our servers support full FTP file access"
   },
   {
     "icon": "ion-ios7-box",
     "text": "Unlimited* Disk Space",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "You’ve got enough to worry about, take disk space off that list"
   },
   {
     "icon": "ion-stats-bars",
     "text": "Unlimited* CPU Usage",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "CPU’s are very important to providing lag free service, Why should you be limited?"
   },
   {
     "icon": "ion-connection-bars",
     "text": "Blazing fast connection",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "Your players will see very low latency when playing on your server!"
   },
   {
     "icon": "ion-ios7-world",
     "text": "Locations Worldwide",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "Not everyone plays from the states, thus we don't limit our hosting to the states! Be sure to checkout all of our locations!"
   },
   {
     "icon": "ion-arrow-graph-up-right",
     "text": "Extremely Powerful",
-    "subtext": "You’re paying for a monthly service, so none of that time paid should include downtime!"
+    "subtext": "We offer servers from 512mb to 32GB and beyond, with industry leading CPUs to get you gaming at peak performance!"
   }
 ]
