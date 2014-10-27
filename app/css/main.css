@@ -6752,7 +6752,8 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
   top: 40%;
   z-index: 10;
   width: 100%;
-  text-shadow: 0px 0px 14px rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 10px black;
+  text-outline: 1px solid #ccc;
 }
 .header .iconFeatures li {
   font-size: 14pt;
