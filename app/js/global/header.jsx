@@ -13,7 +13,7 @@ var ContinueBtn = React.createClass({
   render: function(){
     return(
       <div className="continueBtnWrapper">
-        <button onClick={this.props.handleClick} className="ghosty ghosty_alt">
+        <button onClick={this.props.handleClick} className="ghosty">
           Get Hosted!
         </button>
       </div>

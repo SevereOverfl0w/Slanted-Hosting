@@ -6739,10 +6739,10 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 .header {
   width: 100%;
   height: 120%;
-  background: url("../../img/backgrounds/bg.jpg");
+  background: url("../../img/backgrounds/bg.png");
   background-size: cover;
   position: relative;
-  color: #fff;
+  color: #000;
 }
 .header .continueBtnWrapper {
   position: absolute;
@@ -6757,8 +6757,7 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
   top: 40%;
   z-index: 10;
   width: 100%;
-  text-shadow: 0px 0px 10px black;
-  text-outline: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.5);
 }
 .header .iconFeatures li {
   font-size: 14pt;
@@ -6773,6 +6772,7 @@ table .success a, .table .success a, table .warning a, .table .warning a, table 
 }
 .header .iconFeatures li span {
   font-size: 45pt;
+  color: #fff;
 }
 .header .iconFeatures li .smaller {
   font-size: 10pt;
@@ -7178,6 +7178,14 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .primary {

@@ -40,5 +40,17 @@
     "image": "app/img/avatars/muzixs.png",
     "name": "Alexander Dietrich",
     "title": "CEO"
+  },
+  {
+    "link": "http://acixs.com",
+    "image": "app/img/avatars/kaya.jpg",
+    "name": "Kaya",
+    "title": "Billing & HR Manager"
+  },
+  {
+    "link": "http://twitter.com/Ben_addington",
+    "image": "app/img/avatars/ben.png",
+    "name": "Ben Addington",
+    "title": "CCO"
   }
 ]

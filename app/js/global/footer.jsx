@@ -63,9 +63,15 @@ var Promotions = React.createClass({
 var MadeWithLove = React.createClass({
   render: function(){
     return(
-      <p>
-        Made with <span className="ion-heart"></span> by <a href="http://32dev.com">Matt Wisniewski</a>.
-      </p>
+      <div>
+        <p className="left">
+          Made with <span className="ion-heart"></span> by <a href="http://32dev.com">Matt Wisniewski</a>.
+        </p>
+        &nbsp;&nbsp;&nbsp;
+        <p className="right">
+          <span className="ion-social-github"></span> <a href="https://github.com/32Dev/Slanted-Hosting">OpenSourced</a> becasue why not?
+        </p>
+      </div>
     );
   }
 });

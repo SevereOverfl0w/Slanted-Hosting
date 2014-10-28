@@ -98,8 +98,14 @@ var Promotions = React.createClass({displayName: 'Promotions',
 var MadeWithLove = React.createClass({displayName: 'MadeWithLove',
   render: function(){
     return(
-      React.DOM.p(null, 
-        "Made with ", React.DOM.span({className: "ion-heart"}), " by ", React.DOM.a({href: "http://32dev.com"}, "Matt Wisniewski"), "."
+      React.DOM.div(null, 
+        React.DOM.p({className: "left"}, 
+          "Made with ", React.DOM.span({className: "ion-heart"}), " by ", React.DOM.a({href: "http://32dev.com"}, "Matt Wisniewski"), "."
+        ), 
+        "   ", 
+        React.DOM.p({className: "right"}, 
+          React.DOM.span({className: "ion-social-github"}), " ", React.DOM.a({href: "https://github.com/32Dev/Slanted-Hosting"}, "OpenSourced"), " becasue why not?"
+        )
       )
     );
   }
@@ -189,7 +195,7 @@ var ContinueBtn = React.createClass({displayName: 'ContinueBtn',
   render: function(){
     return(
       React.DOM.div({className: "continueBtnWrapper"}, 
-        React.DOM.button({onClick: this.props.handleClick, className: "ghosty ghosty_alt"}, 
+        React.DOM.button({onClick: this.props.handleClick, className: "ghosty"}, 
           "Get Hosted!"
         )
       )
