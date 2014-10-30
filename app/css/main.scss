@@ -15,6 +15,12 @@ $lowpoly: url('../../img/backgrounds/lowpoly.png');
 @import 'footer';
 @import 'staff';
 
+*{
+	-webkit-font-smoothing: subpixel-antialiased;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+
 html{
 	max-width:100%;
 	width:100%;
