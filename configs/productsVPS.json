@@ -1,25 +1,25 @@
 [
 {
   "name": "Micro Starter",
-  "specs": "5GB Disk Space, (S)FTP Access, Full SSH, 1GB RAM, 100MB/s NIC, SolusVM CPanel",
+  "specs": "Dedicated IP, 45GB Disk Space, (S)FTP Access, Full SSH, 1GB RAM, 100MB/s NIC, SolusVM CPanel",
   "link": "https://acixs.com/clients/cart.php?a=confproduct&i=0",
   "price": "$8.00"
 },
 {
   "name": "Starter",
-  "specs": "10GB Disk Space, (S)FTP Access, Full SSH, 2GB RAM, 100MB/s NIC, SolusVM CPanel",
+  "specs": "Dedicated IP, 50GB Disk Space, (S)FTP Access, Full SSH, 2GB RAM, 100MB/s NIC, SolusVM CPanel",
   "link": "https://acixs.com/clients/cart.php?a=confproduct&i=1",
   "price": "$16.00"
 },
 {
   "name": "Basic",
-  "specs": "20GB Disk Space, (S)FTP Access, Full SSH, 4GB RAM, 100MB/s NIC, SolusVM CPanel",
+  "specs": "Dedicated IP, 60GB Disk Space, (S)FTP Access, Full SSH, 4GB RAM, 100MB/s NIC, SolusVM CPanel",
   "link": "https://acixs.com/clients/cart.php?a=confproduct&i=2",
   "price": "$32.00"
 },
 {
   "name": "Plus",
-  "specs": "30GB Disk Space, (S)FTP Access, Full SSH, 6GB RAM, 500MB/s NIC, SolusVM CPanel",
+  "specs": "Dedicated IP, 70GB Disk Space, (S)FTP Access, Full SSH, 6GB RAM, 500MB/s NIC, SolusVM CPanel",
   "link": "https://acixs.com/clients/cart.php?a=confproduct&i=3",
   "price": "$48.00"
 }
