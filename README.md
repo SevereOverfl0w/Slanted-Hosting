@@ -12,7 +12,7 @@ Other than that, you guys are free to do whatever you want.
 ---
 ### Dependancies
 
-To run the site you will need to have the latest versioni of Sass, NodeJS, bower, grunt, grunt-cli.
+To run the site you will need to have the latest version of Sass, NodeJS, bower, grunt, grunt-cli.
 
 ---
 ### Starting the website
