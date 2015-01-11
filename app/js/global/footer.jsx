@@ -69,7 +69,7 @@ var MadeWithLove = React.createClass({
         </p>
         &nbsp;&nbsp;&nbsp;
         <p className="right">
-          <span className="ion-social-github"></span> <a href="https://github.com/32Dev/Slanted-Hosting">OpenSourced</a> becasue why not?
+          <span className="ion-social-github"></span> <a href="https://github.com/32Dev/Slanted-Hosting">OpenSourced</a> because why not?
         </p>
       </div>
     );
