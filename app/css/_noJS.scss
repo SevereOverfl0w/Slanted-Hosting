@@ -1,0 +1,15 @@
+.noJS {
+  color: white;
+  text-align: center;
+  .errorTitle {
+    font-family: Pacifico, cursive;
+  }
+
+  .errorLogo {
+    max-width: 350px;
+    @media(max-width: 350px){
+      max-width: 100%;
+    }
+  }
+
+}
