@@ -7,7 +7,7 @@ var StaffList = React.createClass({
     var allstaff = this.props.staffMem.map(function(staffMember){
       return(
         <div className="avatar">
-         <a href={staffMember.link} target="_blank" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+         <a href={staffMember.link} target="_blank" data-toggle="tooltip" data-placement="top" title={staffMember.name}>
           <img src={staffMember.image} className="user"/>
          </a>
          <br/>
